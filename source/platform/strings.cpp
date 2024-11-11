@@ -58,7 +58,7 @@ btoa_lut_t btoa_lut = init_btoa_lut();
 
 } // namespace tvision
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) && !defined(__clang__) 
 
 #include <strings.h>
 
